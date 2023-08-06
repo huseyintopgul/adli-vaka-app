@@ -23,7 +23,7 @@ export enum GelisNedeni {
     trafikKazasi = 'Tarfik Kazası',
     digerKazalar = 'Diğer Kazalar',
     intihar = 'İntihar',
-    insanHaklari = 'İnsan Hakları',
+    insanHaklari = 'İnsan Hakları İhlali İddiası',
     zehirlenme = 'Zehirlenmeler'
 }
 
@@ -31,7 +31,7 @@ export enum GelisNedeni {
 export enum OdadaBulunanlar {
     doktor = 'Tabip',
     saglikci = 'Sağlık Personeli',
-    other = 'Sağlık Meslek Mensubu Personel',
+    other = 'Sağlık Meslek Mensubu Personeli',
     refaketci = 'Refakatçi',
     guvenlik = 'Güvenlik Görevlisi',
 }

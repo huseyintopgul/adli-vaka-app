@@ -10,7 +10,6 @@ import Switch from '@mui/material/Switch';
 const gelisNedeniArray = Object.values(GelisNedeni);
 const odadaBulunanlarArray = Object.values(OdadaBulunanlar);
 
-
 const requiredMsg = 'Boş bırakılamaz!';
 const lengthMsg = 'En az 25 karakter uzunluğunda olmalıdır!'
 
@@ -24,8 +23,7 @@ const genelBilgilerSchema = yup.object().shape({
         .min(1, requiredMsg),
     gelisNedeniAciklama: yup
         .string()
-        .min(25, lengthMsg)
-        .required(requiredMsg),
+        .min(25, lengthMsg),
     organizasyon: yup
         .string().
         required(requiredMsg),

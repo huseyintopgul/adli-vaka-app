@@ -1,7 +1,6 @@
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { useSelector } from 'react-redux';
 import { RootReducer } from '../../redux/store';
-import { Cinsiyet } from '../../model/enums';
 import { Hasta } from '../../model/types';
 
 const columns: GridColDef[] = [
@@ -83,7 +82,7 @@ const columns: GridColDef[] = [
         headerName: 'Uygun Ortam Sağlandı',
         width: 160,
         valueGetter: (params: GridValueGetterParams) =>
-            params.row.genelBilgiler.uygunOrtam ? 'Sağlandı' : 'Sağlanmadı'
+            params.row.genelBilgiler.uygunOrtamSaglandi ? 'Sağlanmadı' : 'Sağlandı',
     },
     {
         field: 'organizasyon',
@@ -101,33 +100,10 @@ const columns: GridColDef[] = [
     },
 ];
 
-
-const rows = [
-    {
-        id: '',
-        adi: '',
-        soyadi: '',
-        yas: null,
-        cinsiyet: Cinsiyet,
-        kanGrubu: '',
-        kanGrubuRh: '',
-        gelisNedeni: null,
-        gelisNedeniAciklama: '',
-        odadaBulunanlar: [],
-        darpDurumu: true,
-        organizasyon: '',
-        sikayet: '',
-        doktorAdi: '',
-        uygunOrtamSaglandi: false
-
-    },
-
-];
-
 export default function HastaTablo(props: { hastalar: Hasta[] }) {
     const { hastalar } = useSelector((rootState: RootReducer) => rootState.hastaKayitlari);
     return (
-        <div className='h-[300px] w-full'>
+        <div className='min-h-[100px] w-full'>
             <DataGrid
                 rows={hastalar}
                 columns={columns}

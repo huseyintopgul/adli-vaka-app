@@ -1,16 +1,12 @@
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 const Header = (props: { title: string, subtitle: string }) => {
   return (
-    <Box mb='30px'>
+    <div className='mb-[30px]'>
       <Typography
         variant='h4'
         color='gray'
-        fontWeight='bold'
-        sx={{
-          mb: '5px'
-        }}
-      >
+        fontWeight='bold'>
         {props.title}
       </Typography>
       <Typography
@@ -18,7 +14,7 @@ const Header = (props: { title: string, subtitle: string }) => {
       >
         {props.subtitle}
       </Typography>
-    </Box>
+    </div>
   )
 }
 
