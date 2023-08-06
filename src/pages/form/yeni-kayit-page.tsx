@@ -1,9 +1,9 @@
 // UYGULAMA İÇİ İMPORT
 import React, { useState } from 'react'
-import { GenelBilgiler, HastaBilgileri } from '../../model/types';
+import { GenelBilgiler, Hasta, HastaBilgileri } from '../../model/types';
 import Header from '../../common/header';
 import { success } from '../../common/toast';
-import { Hasta, newRecord } from '../../redux/hasta-action';
+import { newRecord } from '../../redux/hasta-action';
 import HastaBilgileriForm from '../../components/hasta-bilgileri/hasta-bilgileri-form';
 import Navigator from '../../common/navigator';
 import GenelBilgilerForm from '../../components/genel-bilgiler/genel-bilgiler-form';

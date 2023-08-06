@@ -10,13 +10,34 @@ const cinsiyetArray = Object.values(Cinsiyet);
 const kanGrubuArray = Object.values(KanGrubu);
 const kanGrubuRhArray = Object.values(KanGrubuRh);
 
+const MsgRequired = 'Boş bırakılamaz!';
+
 const hastaBilgileriSchema = yup.object().shape({
-    adi: yup.string().min(3, 'Ad alanı 3 karaktarden az olamaz!').required('Ad alanı doldurmak zorunludur!'),
-    soyadi: yup.string().max(20, 'Soyad alanı 20 karakterden uzun olamaz!').required('Soyad alanı doldurmak zorunludur!'),
-    yas: yup.number().positive('Lütfen pozitif bir sayı giriniz!').integer('Lütfen tam sayı giriniz!').required('Yaş alanı doldurmak zorunludur!'),
-    cinsiyet: yup.string().oneOf(cinsiyetArray).required('Cinsiyet alanı doldurmak zorunludur!'),
-    kanGrubu: yup.string().oneOf(kanGrubuArray).required('Kan grubu seçmek zorunludur!'),
-    kanGrubuRh: yup.string().oneOf(kanGrubuRhArray).required('Kan grubu seçmek zorunludur!')
+    adi: yup
+        .string()
+        .required(MsgRequired)
+        .min(3, 'Ad alanı 3 karaktarden az olamaz!'),
+    soyadi: yup
+        .string()
+        .required(MsgRequired)
+        .max(20, 'Soyad alanı 20 karakterden uzun olamaz!'),
+    yas: yup
+        .number()
+        .required(MsgRequired)
+        .integer('Lütfen tam sayı giriniz!')
+        .positive('Lütfen pozitif bir sayı giriniz!'),
+    cinsiyet: yup
+        .string()
+        .oneOf(cinsiyetArray)
+        .required(MsgRequired),
+    kanGrubu: yup
+        .string()
+        .oneOf(kanGrubuArray)
+        .required(MsgRequired),
+    kanGrubuRh: yup
+        .string()
+        .oneOf(kanGrubuRhArray)
+        .required(MsgRequired)
 });
 
 const HastaBilgileriForm = (props: {

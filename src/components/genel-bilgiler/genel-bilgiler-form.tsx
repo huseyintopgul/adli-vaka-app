@@ -3,21 +3,42 @@ import { GelisNedeni, OdadaBulunanlar } from '../../model/enums';
 import { GenelBilgiler } from '../../model/types';
 // UYGULAMA DIŞI İMPORT
 import { Formik } from 'formik';
-import { Button, FormControl, FormControlLabel, InputLabel, ListItemText, MenuItem, Select, TextField } from '@mui/material';
+import { Button, FormControl, FormControlLabel, FormHelperText, InputLabel, ListItemText, MenuItem, Select, TextField } from '@mui/material';
 import * as yup from 'yup';
 import Switch from '@mui/material/Switch';
 
 const gelisNedeniArray = Object.values(GelisNedeni);
 const odadaBulunanlarArray = Object.values(OdadaBulunanlar);
 
+
+const requiredMsg = 'Boş bırakılamaz!';
+const lengthMsg = 'En az 25 karakter uzunluğunda olmalıdır!'
+
 const genelBilgilerSchema = yup.object().shape({
-    gelisNedeni: yup.string().oneOf(gelisNedeniArray).required('Geliş nedeni seçimi zorludur!'),
-    // odadaBulunanlar: yup.string().oneOf(odadaBulunanlarArray).required('Odada bulunanları seçmek zorunludur!'),
-    gelisNedeniAciklama: yup.string().min(25, 'Geliş nedeninizi açıklamak için en az 25 karakter kullanmalısınız!'),
-    organizasyon: yup.string().required('Organizasyon alanı boş geçilemez!'),
-    sikayet: yup.string().min(25, 'Şikayet alanı 25 karakterden kısa olamaz!').required('Şikayet alanı boş geçilemez!'),
-    doktorAdi: yup.string().required('Doktor alanı boş geçilemez!'),
-    uygunOrtamSaglandi: yup.boolean().required('Uygun ortam alanı boş geçilemez!')
+    gelisNedeni: yup
+        .string()
+        .oneOf(gelisNedeniArray)
+        .required(requiredMsg),
+    odadaBulunanlar: yup
+        .array()
+        .min(1, requiredMsg),
+    gelisNedeniAciklama: yup
+        .string()
+        .min(25, lengthMsg)
+        .required(requiredMsg),
+    organizasyon: yup
+        .string().
+        required(requiredMsg),
+    sikayet: yup
+        .string()
+        .min(25, lengthMsg)
+        .required(requiredMsg),
+    doktorAdi: yup
+        .string()
+        .required(requiredMsg),
+    uygunOrtamSaglandi: yup
+        .boolean()
+        .required(requiredMsg)
 });
 const varsayilanGenelBilgiler: GenelBilgiler = {
     gelisNedeni: null,
@@ -106,7 +127,9 @@ const GenelBilgilerForm = (props: { saveGenelBilgiler: any, prevForm: any, activ
                             />
                         </div>
                         <div className="xs={12} sm={6}">
-                            <FormControl className='w-full'>
+                            <FormControl className='w-full'
+                                error={!!touched.odadaBulunanlar && !!errors.odadaBulunanlar}
+                            >
                                 <InputLabel>Odada Bulunanlar</InputLabel>
                                 <Select
                                     fullWidth
@@ -126,6 +149,7 @@ const GenelBilgilerForm = (props: { saveGenelBilgiler: any, prevForm: any, activ
                                         ))
                                     }
                                 </Select>
+                                <FormHelperText>{touched.odadaBulunanlar && errors.odadaBulunanlar}</FormHelperText>
                             </FormControl>
                         </div>
                         <div className="xs={12} sm={6}">

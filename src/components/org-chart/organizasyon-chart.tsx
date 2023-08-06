@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Chart } from 'react-google-charts';
-import { Hasta } from '../../redux/hasta-action';
+import { Hasta } from '../../model/types';
 
 export const options = {
     title: 'Organizasyona Göre Adli Rapor Grafiği',

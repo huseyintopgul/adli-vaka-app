@@ -1,12 +1,9 @@
-import { AddRecordAction, Hasta, LOAD_RECORDS, LoadRecordAction, NEW_RECORD } from './hasta-action'
-
-
+import { Hasta } from '../model/types';
+import { AddRecordAction, LOAD_RECORDS, LoadRecordAction, NEW_RECORD } from './hasta-action'
 
 const baslangicDurumu = {
     hastalar: []
 }
-
-
 
 const localStorageKey = 'hasta_kayitlari';
 const addToLocalStorage = (hasta: Hasta) => {

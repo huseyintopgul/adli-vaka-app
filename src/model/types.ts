@@ -18,5 +18,11 @@ export type GenelBilgiler = {
     organizasyon: string,
     sikayet: string,
     doktorAdi: string,
-    uygunOrtamSaglandi: boolean 
+    uygunOrtamSaglandi: boolean
+}
+
+export type Hasta = {
+    id: string | null,
+    hastaBilgileri: HastaBilgileri,
+    genelBilgiler: GenelBilgiler
 }

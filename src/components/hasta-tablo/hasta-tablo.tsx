@@ -1,8 +1,8 @@
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
-import { Hasta } from '../../redux/hasta-action';
 import { useSelector } from 'react-redux';
 import { RootReducer } from '../../redux/store';
 import { Cinsiyet } from '../../model/enums';
+import { Hasta } from '../../model/types';
 
 const columns: GridColDef[] = [
 
