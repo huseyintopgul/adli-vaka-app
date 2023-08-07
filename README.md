@@ -14,14 +14,9 @@ React, Typescript, Redux, TailwindCSS, MUIÏ
 > Project is a implementation in React, Typescript, Redux, TailwindCSS, MUI
 
 ## clone or download
-
+ git clone https://github.com/huseyintopgul/adli-vaka-app.git
+ 
 ## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/huseyintopgul/adli-vaka-app.git
-```
 
 Go to the project directory
 
@@ -39,7 +34,7 @@ Start the server
 
 ```bash
   npm run start
-```Ï
+```
 ```terminal
 $ git clone https://github.com/huseyintopgul/react-ts-todo-app.git
 $ yarn # or npm i
