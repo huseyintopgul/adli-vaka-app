@@ -82,8 +82,9 @@ Project Structure
 - Responsive mode
 
 ## Screenshots
-<img width="250" alt="s-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/837f356f-df00-464e-b3c5-ca65c8fbcc73">
-<img width="1177" alt="s-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/96213676-88ee-4591-ac5c-eb553fa5197f">
+#Full Screen
+<img width="600" alt="s-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/837f356f-df00-464e-b3c5-ca65c8fbcc73">
+<img width="600" alt="s-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/96213676-88ee-4591-ac5c-eb553fa5197f">
 <img width="1429" alt="s-1" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/d07d138b-f42d-4da6-8647-e05c12678742">
 
 
