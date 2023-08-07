@@ -1,8 +1,8 @@
 <h1 align="center">
-🌐 React, ÏTypescript, TailwindCSS, MUI
+🌐 React, Typescript, Redux, TailwindCSS, MUI
 </h1>
 <p align="center">
-React, Typescript, CSS3, Vite
+React, Typescript, Redux, TailwindCSS, MUIÏ
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@ React, Typescript, CSS3, Vite
    </a>
 </p>
 
-> Project is a implementation in React, Typescript, CSS3
+> Project is a implementation in React, Typescript, Redux, TailwindCSS, MUI
 
 ## clone or download
 
