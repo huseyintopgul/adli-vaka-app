@@ -2,7 +2,7 @@
 🌐 React, Typescript, Redux, TailwindCSS, MUI
 </h1>
 <p align="center">
-React, Typescript, Redux, TailwindCSS, MUIÏ
+React, Typescript, Redux, TailwindCSS, MUI
 </p>
 
 <p align="center">
