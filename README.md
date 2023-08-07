@@ -32,7 +32,7 @@ Start the server
   npm run start
 ```
 ```terminal
-$ git clone https://github.com/huseyintopgul/react-ts-todo-app.git
+$ git clone https://github.com/huseyintopgul/adli-vaka-app.git
 $ yarn # or npm i
 ```
 ## project structure
