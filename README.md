@@ -1,46 +1,155 @@
-# Getting Started with Create React App
+<h1 align="center">
+🌐 React, ÏTypescript, TailwindCSS, MUI
+</h1>
+<p align="center">
+React, Typescript, CSS3, Vite
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+   <a href="https://github.com/huseyintopgul">
+      <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+   </a>
+</p>
 
-## Available Scripts
+> Project is a implementation in React, Typescript, CSS3
 
-In the project directory, you can run:
+## clone or download
 
-### `npm start`
+## Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone the project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+  git clone https://github.com/huseyintopgul/adli-vaka-app.git
+```
 
-### `npm test`
+Go to the project directory
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  cd adli-vaka-app
+```
 
-### `npm run build`
+Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm run start
+```Ï
+```terminal
+$ git clone https://github.com/huseyintopgul/react-ts-todo-app.git
+$ yarn # or npm i
+```
 
-### `npm run eject`
+## project structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```terminal
+Project Structure
+-----------------
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- public/
+- src/
+      - common
+        - header
+        - navigator
+        - toast.ts
+    - components
+        - genel-bilgiler
+            - genel-bilgiler-form.tsx
+        - hasta-bilgileri
+            - hasta-bilgileriform.tsx
+        - hasta-tablo
+            - hasta-tablo.tsx
+        - org-chart
+            - organizasyon-chart.tsx
+    - model
+        - enums.ts
+        - type.ts
+    - pages
+        - details
+            - kayitli-hastalar.tsx
+        - form
+            - yeni-kayit-page
+    - redux
+        - hasta-actions.ts
+        - hasta-reducer.ts
+        -store.ts
+    - App.tsx
+    - index.tsx
+    - index.css
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- node_modules/
+- package.json
+- tsconfig.json
+- tsconfig.node.json
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+# Usage (run project app on your machine)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Form validation
+- Chart 3D & Data table
+- Responsive mode
+  Ï
+## Prerequisites
+
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [MUI](https://mui.com/)
+- [Node](https://nodejs.org/en/download/) ^19.7.0
+- [npm](https://nodejs.org/en/download/package-manager/)
+
+## Client-side usage(http://localhost:5173/)
+
+```terminal
+$ cd client          // go to client folder
+$ yarn # or npm i    // npm install packages
+$ npm run dev        // run it locally
+```
+
+### Start
+
+```terminal
+$ cd api   // go to api folder
+$ npm i       // npm install packages
+$ npm run dev // run it locally
+$ npm run build // this will build the server code to es5 js codes and generate a dist file
+```
+
+# Dependencies(tech-stacks)
+
+| Client-side  
+| -------------------------------------
+| react: "^18.2.0"  
+| react-dom: "^18.2.0"  
+| @types/react": "^18.2.15"  
+| @types/react-dom": "^18.2.7"
+| react-redux": "^8.1.2"
+| react-toastify": "^9.1.3"
+| react-uuid": "^2.0.0"
+| @typescript-eslint/eslint-plugin": "^6.0.0"
+| @typescript-eslint/parser": "^6.0.0"
+| typescript": "^5.0.2"
+| @emotion/react": "^11.10.6"
+| "@emotion/styled": "^11.10.6"
+| "@mui/icons-material": "^5.11.16"
+| "@mui/material": "^5.11.16"
+| "@mui/x-data-grid": "^6.0.4"
+| "@nivo/pie": "^0.80.0"
+
+
+## BUGs or comments
+
+[Create new Issues](https://github.com/huseyintopgul/adli-vaka-app.git) (preferred)
+## Authors
+
+- [@huseyintopgul](https://github.com/huseyintopgul)
+Email Me: huseyintopgul1@gmail.com (welcome, say hi)
