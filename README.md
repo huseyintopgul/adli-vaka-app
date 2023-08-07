@@ -23,15 +23,11 @@ Go to the project directory
 ```bash
   cd adli-vaka-app
 ```
-
 Install dependencies
-
 ```bash
   npm install
 ```
-
 Start the server
-
 ```bash
   npm run start
 ```
@@ -39,13 +35,10 @@ Start the server
 $ git clone https://github.com/huseyintopgul/react-ts-todo-app.git
 $ yarn # or npm i
 ```
-
 ## project structure
-
 ```terminal
 Project Structure
 -----------------
-
 - public/
 - src/
       - common
@@ -83,17 +76,19 @@ Project Structure
 - tsconfig.node.json
 
 ```
-
-# Usage (run project app on your machine)
-
 ## Features
-
 - Form validation
 - Chart 3D & Data table
 - Responsive mode
-  Ï
-## Prerequisites
 
+## Screenshots
+<img width="250" alt="s-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/837f356f-df00-464e-b3c5-ca65c8fbcc73">
+<img width="1177" alt="s-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/96213676-88ee-4591-ac5c-eb553fa5197f">
+<img width="1429" alt="s-1" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/d07d138b-f42d-4da6-8647-e05c12678742">
+
+
+  
+## Prerequisites
 - [React](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Redux](https://redux.js.org/)
