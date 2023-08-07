@@ -81,10 +81,14 @@ Project Structure
 - Chart 3D & Data table
 - Responsive mode
 
-## Screenshots
-#Full Screen
-<img width="600" alt="s-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/837f356f-df00-464e-b3c5-ca65c8fbcc73">
-<img width="600" alt="s-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/96213676-88ee-4591-ac5c-eb553fa5197f">
+## Screenshots #Mobile Screen
+<img width="436" alt="m-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/296bb45f-aa30-4e35-b70a-52a88ea9d25f">
+<img width="436" alt="m-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/852ae86e-732c-4d9b-99d2-f14bd659e8f9">
+<img width="436" alt="m-1" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/04bd24c3-2bcf-484e-9a25-3caafe026a91">
+
+## Screenshots #Full Screen
+<img width="1177" alt="s-3" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/837f356f-df00-464e-b3c5-ca65c8fbcc73">
+<img width="1177" alt="s-2" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/96213676-88ee-4591-ac5c-eb553fa5197f">
 <img width="1429" alt="s-1" src="https://github.com/huseyintopgul/adli-vaka-app/assets/124911450/d07d138b-f42d-4da6-8647-e05c12678742">
 
 
